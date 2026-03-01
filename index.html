@@ -11,7 +11,9 @@
     <meta property="og:title" content="Royal Atlas Travels | Premium Travel Experiences">
     <meta property="og:description" content="Your gateway to luxury travel in Europe, UAE, and America">
     <meta property="og:type" content="website">
+    <meta property="og:url" content="https://royalatlastravels.netlify.app/">
     <meta property="og:image" content="images/hero-bg.jpg">
+    <link rel="canonical" href="https://royalatlastravels.netlify.app/">
     
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -26,6 +28,18 @@
     
     <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
+
+    <!-- Clean URL: strip agent/deploy ID query parameters -->
+    <script>
+    (function() {
+        var url = new URL(window.location.href);
+        var cleaned = false;
+        ['agentId', 'agent_id', 'deployId', 'deploy_id'].forEach(function(p) {
+            if (url.searchParams.has(p)) { url.searchParams.delete(p); cleaned = true; }
+        });
+        if (cleaned) { window.history.replaceState({}, '', url.pathname + url.search + url.hash); }
+    })();
+    </script>
 </head>
 <body>
     <!-- ============================================
@@ -37,9 +51,9 @@
                 <div class="logo-icon">
                     <i class="fas fa-plane"></i>
                 </div>
-                <div class="logo-text">ROYAL <span>ATLAS</span></div>
+                <div class="logo-text">ROYAL ATLAS <span>TRAVELS</span></div>
             </a>
-            
+
             <ul class="nav-links">
                 <li><a href="#home" class="nav-link">Home</a></li>
                 <li><a href="#about" class="nav-link">About</a></li>
@@ -327,6 +341,10 @@
                 <p class="section-description light">
                     Explore our handpicked destinations in Europe, UAE, and America.
                 </p>
+                <p class="pricing-note">
+                    <i class="fas fa-info-circle"></i>
+                    Prices vary depending on your start location. Contact us for an accurate quote.
+                </p>
             </div>
             
             <div class="destinations-tabs" data-aos="fade-up" data-aos-delay="200">
@@ -357,14 +375,14 @@
                             <h3>Paris, France</h3>
                             <p>City of Lights & Romance</p>
                             <div class="destination-footer">
-                                <span class="destination-price">From ₦850K</span>
+                                <span class="destination-price">From £820</span>
                                 <a href="https://wa.me/2349160012717" target="_blank" class="destination-btn">
                                     <i class="fab fa-whatsapp"></i>
                                 </a>
                             </div>
                         </div>
                     </div>
-                    
+
                     <div class="destination-card" data-aos="fade-up" data-aos-delay="100">
                         <div class="destination-image">
                             <img src="images/europe-greece.jpg" alt="Santorini, Greece">
@@ -375,14 +393,14 @@
                             <h3>Santorini, Greece</h3>
                             <p>Mediterranean Paradise</p>
                             <div class="destination-footer">
-                                <span class="destination-price">From ₦920K</span>
+                                <span class="destination-price">From £890</span>
                                 <a href="https://wa.me/2349160012717" target="_blank" class="destination-btn">
                                     <i class="fab fa-whatsapp"></i>
                                 </a>
                             </div>
                         </div>
                     </div>
-                    
+
                     <div class="destination-card" data-aos="fade-up" data-aos-delay="200">
                         <div class="destination-image">
                             <img src="images/europe-london.jpg" alt="London, UK">
@@ -393,7 +411,7 @@
                             <h3>London, UK</h3>
                             <p>Historic & Modern Blend</p>
                             <div class="destination-footer">
-                                <span class="destination-price">From ₦780K</span>
+                                <span class="destination-price">From £750</span>
                                 <a href="https://wa.me/2349160012717" target="_blank" class="destination-btn">
                                     <i class="fab fa-whatsapp"></i>
                                 </a>
@@ -416,7 +434,7 @@
                             <h3>Dubai, UAE</h3>
                             <p>City of Superlatives</p>
                             <div class="destination-footer">
-                                <span class="destination-price">From ₦650K</span>
+                                <span class="destination-price">From £630</span>
                                 <a href="https://wa.me/2349160012717" target="_blank" class="destination-btn">
                                     <i class="fab fa-whatsapp"></i>
                                 </a>
@@ -434,7 +452,7 @@
                             <h3>Abu Dhabi, UAE</h3>
                             <p>Cultural Capital</p>
                             <div class="destination-footer">
-                                <span class="destination-price">From ₦680K</span>
+                                <span class="destination-price">From £660</span>
                                 <a href="https://wa.me/2349160012717" target="_blank" class="destination-btn">
                                     <i class="fab fa-whatsapp"></i>
                                 </a>
@@ -452,7 +470,7 @@
                             <h3>Sharjah, UAE</h3>
                             <p>Heritage & Arts</p>
                             <div class="destination-footer">
-                                <span class="destination-price">From ₦620K</span>
+                                <span class="destination-price">From £600</span>
                                 <a href="https://wa.me/2349160012717" target="_blank" class="destination-btn">
                                     <i class="fab fa-whatsapp"></i>
                                 </a>
@@ -475,7 +493,7 @@
                             <h3>New York, USA</h3>
                             <p>The City That Never Sleeps</p>
                             <div class="destination-footer">
-                                <span class="destination-price">From ₦1.2M</span>
+                                <span class="destination-price">From £1,150</span>
                                 <a href="https://wa.me/2349160012717" target="_blank" class="destination-btn">
                                     <i class="fab fa-whatsapp"></i>
                                 </a>
@@ -493,7 +511,7 @@
                             <h3>Los Angeles, USA</h3>
                             <p>Entertainment Capital</p>
                             <div class="destination-footer">
-                                <span class="destination-price">From ₦1.1M</span>
+                                <span class="destination-price">From £1,050</span>
                                 <a href="https://wa.me/2349160012717" target="_blank" class="destination-btn">
                                     <i class="fab fa-whatsapp"></i>
                                 </a>
@@ -511,7 +529,7 @@
                             <h3>Miami, USA</h3>
                             <p>Sun, Sand & Style</p>
                             <div class="destination-footer">
-                                <span class="destination-price">From ₦980K</span>
+                                <span class="destination-price">From £950</span>
                                 <a href="https://wa.me/2349160012717" target="_blank" class="destination-btn">
                                     <i class="fab fa-whatsapp"></i>
                                 </a>
@@ -764,7 +782,7 @@
                         <div class="logo-icon">
                             <i class="fas fa-plane"></i>
                         </div>
-                        <div class="logo-text">ROYAL <span>ATLAS</span></div>
+                        <div class="logo-text">ROYAL ATLAS <span>TRAVELS</span></div>
                     </a>
                     <p>
                         Your trusted partner for extraordinary travel experiences. 
@@ -826,7 +844,7 @@
             </div>
             
             <div class="footer-bottom">
-                <p>&copy; 2024 Royal Atlas Travels. All rights reserved.</p>
+                <p>&copy; 2026 Royal Atlas Travels. All rights reserved.</p>
                 <div class="footer-bottom-links">
                     <a href="#">Privacy Policy</a>
                     <a href="#">Terms of Service</a>

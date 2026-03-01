@@ -861,6 +861,19 @@ img {
     background-size: 60px 60px;
 }
 
+.pricing-note {
+    text-align: center;
+    color: rgba(255, 255, 255, 0.65);
+    font-size: 14px;
+    margin-top: 15px;
+    font-style: italic;
+}
+
+.pricing-note i {
+    margin-right: 6px;
+    color: var(--gold);
+}
+
 .destinations-tabs {
     display: flex;
     justify-content: center;
