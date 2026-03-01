@@ -1,0 +1,853 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Royal Atlas Travels | Premium Travel Experiences</title>
+    <meta name="description" content="Royal Atlas Travels - Your gateway to luxury travel experiences in Europe, UAE, and America. Book flights, hotels, and curated holiday packages.">
+    <meta name="keywords" content="travel agency, Europe travel, UAE travel, America travel, luxury travel, flight booking, hotel reservations">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Royal Atlas Travels | Premium Travel Experiences">
+    <meta property="og:description" content="Your gateway to luxury travel in Europe, UAE, and America">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/hero-bg.jpg">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- ============================================
+         NAVIGATION
+         ============================================ -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <a href="#" class="logo">
+                <div class="logo-icon">
+                    <i class="fas fa-plane"></i>
+                </div>
+                <div class="logo-text">ROYAL <span>ATLAS</span></div>
+            </a>
+            
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#destinations" class="nav-link">Destinations</a></li>
+                <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            
+            <a href="https://wa.me/2349160012717" target="_blank" class="btn btn-primary nav-cta">
+                <i class="fab fa-whatsapp"></i>
+                Book Now
+            </a>
+            
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+        </div>
+    </nav>
+    
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <button class="mobile-menu-close" id="mobileMenuClose">
+            <i class="fas fa-times"></i>
+        </button>
+        <div class="mobile-menu-content">
+            <a href="#home" class="mobile-link">Home</a>
+            <a href="#about" class="mobile-link">About</a>
+            <a href="#services" class="mobile-link">Services</a>
+            <a href="#destinations" class="mobile-link">Destinations</a>
+            <a href="#testimonials" class="mobile-link">Testimonials</a>
+            <a href="#contact" class="mobile-link">Contact</a>
+        </div>
+    </div>
+    
+    <!-- ============================================
+         HERO SECTION
+         ============================================ -->
+    <section class="hero" id="home">
+        <div class="hero-bg"></div>
+        <div class="hero-overlay"></div>
+        
+        <!-- Animated Particles -->
+        <div class="particles" id="particles"></div>
+        
+        <div class="container">
+            <div class="hero-content" data-aos="fade-up" data-aos-duration="1000">
+                <div class="hero-badge">
+                    <i class="fas fa-crown"></i>
+                    Premium Travel Agency
+                </div>
+                <h1 class="hero-title">
+                    Explore the World with <span class="gradient-text">Confidence</span>
+                </h1>
+                <p class="hero-description">
+                    Discover extraordinary journeys to Europe, UAE, and America. 
+                    We craft unforgettable travel experiences tailored to your dreams.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#destinations" class="btn btn-primary btn-glow">
+                        <i class="fas fa-compass"></i>
+                        Explore Destinations
+                    </a>
+                    <a href="https://wa.me/2349160012717" target="_blank" class="btn btn-outline">
+                        <i class="fab fa-whatsapp"></i>
+                        Chat on WhatsApp
+                    </a>
+                </div>
+            </div>
+            
+            <div class="hero-stats" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
+                <div class="stat-item">
+                    <div class="stat-number" data-count="10000">0</div>
+                    <div class="stat-label">Happy Travelers</div>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <div class="stat-number" data-count="50">0</div>
+                    <div class="stat-label">Destinations</div>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <div class="stat-number" data-count="99">0</div>
+                    <div class="stat-label">% Satisfaction</div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Scroll Indicator -->
+        <div class="scroll-indicator">
+            <div class="scroll-mouse">
+                <div class="scroll-wheel"></div>
+            </div>
+            <span>Scroll to explore</span>
+        </div>
+    </section>
+    
+    <!-- ============================================
+         ABOUT SECTION
+         ============================================ -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-content" data-aos="fade-right" data-aos-duration="1000">
+                    <div class="section-header left">
+                        <span class="section-label">About Us</span>
+                        <h2 class="section-title">Your Trusted Travel Partner</h2>
+                    </div>
+                    <p class="about-text">
+                        Royal Atlas Travels is a premier travel agency based in Lagos, Nigeria, 
+                        dedicated to providing exceptional travel experiences. We specialize in 
+                        curated journeys to Europe, UAE, and America, ensuring every trip is 
+                        memorable and hassle-free.
+                    </p>
+                    <p class="about-text">
+                        Our team of experienced travel consultants works tirelessly to craft 
+                        personalized itineraries that match your preferences, budget, and travel 
+                        style. From flight bookings to hotel reservations and visa assistance, 
+                        we handle every detail.
+                    </p>
+                    
+                    <div class="features-grid">
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                            <span>Expert travel consultants</span>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                            <span>24/7 customer support</span>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                            <span>Best price guarantee</span>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                            <span>Hassle-free visa processing</span>
+                        </div>
+                    </div>
+                    
+                    <a href="#contact" class="btn btn-dark">
+                        <i class="fas fa-phone"></i>
+                        Get in Touch
+                    </a>
+                </div>
+                
+                <div class="about-image" data-aos="fade-left" data-aos-duration="1000">
+                    <div class="image-wrapper">
+                        <img src="images/europe-paris.jpg" alt="Travel Experience">
+                        <div class="image-glow"></div>
+                    </div>
+                    <div class="floating-card">
+                        <div class="floating-icon">
+                            <i class="fas fa-award"></i>
+                        </div>
+                        <div class="floating-content">
+                            <h4>Trusted By</h4>
+                            <p>10,000+ Travelers</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- ============================================
+         SERVICES SECTION
+         ============================================ -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up" data-aos-duration="1000">
+                <span class="section-label">Our Services</span>
+                <h2 class="section-title">What We Offer</h2>
+                <p class="section-description">
+                    Comprehensive travel solutions designed to make your journey seamless and unforgettable.
+                </p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card" data-aos="fade-up" data-aos-delay="0" data-aos-duration="800">
+                    <div class="service-icon-wrapper">
+                        <div class="service-icon">
+                            <i class="fas fa-plane-departure"></i>
+                        </div>
+                        <div class="service-icon-glow"></div>
+                    </div>
+                    <h3>Flight Bookings</h3>
+                    <p>Access to competitive airfares and flexible booking options for all major airlines worldwide.</p>
+                    <a href="#contact" class="service-link">
+                        Learn More <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                
+                <div class="service-card" data-aos="fade-up" data-aos-delay="100" data-aos-duration="800">
+                    <div class="service-icon-wrapper">
+                        <div class="service-icon">
+                            <i class="fas fa-hotel"></i>
+                        </div>
+                        <div class="service-icon-glow"></div>
+                    </div>
+                    <h3>Hotel Reservations</h3>
+                    <p>From luxury resorts to budget-friendly stays, we find the perfect accommodation for you.</p>
+                    <a href="#contact" class="service-link">
+                        Learn More <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                
+                <div class="service-card" data-aos="fade-up" data-aos-delay="200" data-aos-duration="800">
+                    <div class="service-icon-wrapper">
+                        <div class="service-icon">
+                            <i class="fas fa-passport"></i>
+                        </div>
+                        <div class="service-icon-glow"></div>
+                    </div>
+                    <h3>Visa Assistance</h3>
+                    <p>Expert guidance through the visa application process for Europe, USA, UAE, and more.</p>
+                    <a href="#contact" class="service-link">
+                        Learn More <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                
+                <div class="service-card" data-aos="fade-up" data-aos-delay="300" data-aos-duration="800">
+                    <div class="service-icon-wrapper">
+                        <div class="service-icon">
+                            <i class="fas fa-umbrella-beach"></i>
+                        </div>
+                        <div class="service-icon-glow"></div>
+                    </div>
+                    <h3>Holiday Packages</h3>
+                    <p>Curated vacation packages including flights, hotels, tours, and transfers.</p>
+                    <a href="#contact" class="service-link">
+                        Learn More <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                
+                <div class="service-card" data-aos="fade-up" data-aos-delay="400" data-aos-duration="800">
+                    <div class="service-icon-wrapper">
+                        <div class="service-icon">
+                            <i class="fas fa-briefcase"></i>
+                        </div>
+                        <div class="service-icon-glow"></div>
+                    </div>
+                    <h3>Corporate Travel</h3>
+                    <p>Efficient business travel management with cost-effective solutions for companies.</p>
+                    <a href="#contact" class="service-link">
+                        Learn More <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                
+                <div class="service-card" data-aos="fade-up" data-aos-delay="500" data-aos-duration="800">
+                    <div class="service-icon-wrapper">
+                        <div class="service-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <div class="service-icon-glow"></div>
+                    </div>
+                    <h3>Travel Insurance</h3>
+                    <p>Comprehensive travel insurance coverage for peace of mind during your journeys.</p>
+                    <a href="#contact" class="service-link">
+                        Learn More <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- ============================================
+         DESTINATIONS SECTION
+         ============================================ -->
+    <section class="destinations" id="destinations">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up" data-aos-duration="1000">
+                <span class="section-label">Destinations</span>
+                <h2 class="section-title light">Popular Destinations</h2>
+                <p class="section-description light">
+                    Explore our handpicked destinations in Europe, UAE, and America.
+                </p>
+            </div>
+            
+            <div class="destinations-tabs" data-aos="fade-up" data-aos-delay="200">
+                <button class="tab-btn active" data-tab="europe">
+                    <i class="fas fa-landmark"></i>
+                    Europe
+                </button>
+                <button class="tab-btn" data-tab="uae">
+                    <i class="fas fa-mosque"></i>
+                    UAE
+                </button>
+                <button class="tab-btn" data-tab="america">
+                    <i class="fas fa-city"></i>
+                    America
+                </button>
+            </div>
+            
+            <!-- Europe Tab -->
+            <div class="tab-content active" id="europe">
+                <div class="destinations-grid">
+                    <div class="destination-card" data-aos="fade-up" data-aos-delay="0">
+                        <div class="destination-image">
+                            <img src="images/europe-paris.jpg" alt="Paris, France">
+                            <div class="destination-overlay"></div>
+                        </div>
+                        <div class="destination-content">
+                            <span class="destination-tag">Europe</span>
+                            <h3>Paris, France</h3>
+                            <p>City of Lights & Romance</p>
+                            <div class="destination-footer">
+                                <span class="destination-price">From ₦850K</span>
+                                <a href="https://wa.me/2349160012717" target="_blank" class="destination-btn">
+                                    <i class="fab fa-whatsapp"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="destination-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="destination-image">
+                            <img src="images/europe-greece.jpg" alt="Santorini, Greece">
+                            <div class="destination-overlay"></div>
+                        </div>
+                        <div class="destination-content">
+                            <span class="destination-tag">Europe</span>
+                            <h3>Santorini, Greece</h3>
+                            <p>Mediterranean Paradise</p>
+                            <div class="destination-footer">
+                                <span class="destination-price">From ₦920K</span>
+                                <a href="https://wa.me/2349160012717" target="_blank" class="destination-btn">
+                                    <i class="fab fa-whatsapp"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="destination-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="destination-image">
+                            <img src="images/europe-london.jpg" alt="London, UK">
+                            <div class="destination-overlay"></div>
+                        </div>
+                        <div class="destination-content">
+                            <span class="destination-tag">Europe</span>
+                            <h3>London, UK</h3>
+                            <p>Historic & Modern Blend</p>
+                            <div class="destination-footer">
+                                <span class="destination-price">From ₦780K</span>
+                                <a href="https://wa.me/2349160012717" target="_blank" class="destination-btn">
+                                    <i class="fab fa-whatsapp"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- UAE Tab -->
+            <div class="tab-content" id="uae">
+                <div class="destinations-grid">
+                    <div class="destination-card">
+                        <div class="destination-image">
+                            <img src="images/uae-dubai.jpg" alt="Dubai, UAE">
+                            <div class="destination-overlay"></div>
+                        </div>
+                        <div class="destination-content">
+                            <span class="destination-tag">UAE</span>
+                            <h3>Dubai, UAE</h3>
+                            <p>City of Superlatives</p>
+                            <div class="destination-footer">
+                                <span class="destination-price">From ₦650K</span>
+                                <a href="https://wa.me/2349160012717" target="_blank" class="destination-btn">
+                                    <i class="fab fa-whatsapp"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="destination-card">
+                        <div class="destination-image">
+                            <img src="images/uae-abudhabi.jpg" alt="Abu Dhabi, UAE">
+                            <div class="destination-overlay"></div>
+                        </div>
+                        <div class="destination-content">
+                            <span class="destination-tag">UAE</span>
+                            <h3>Abu Dhabi, UAE</h3>
+                            <p>Cultural Capital</p>
+                            <div class="destination-footer">
+                                <span class="destination-price">From ₦680K</span>
+                                <a href="https://wa.me/2349160012717" target="_blank" class="destination-btn">
+                                    <i class="fab fa-whatsapp"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="destination-card">
+                        <div class="destination-image">
+                            <img src="images/uae-dubai.jpg" alt="Sharjah, UAE">
+                            <div class="destination-overlay"></div>
+                        </div>
+                        <div class="destination-content">
+                            <span class="destination-tag">UAE</span>
+                            <h3>Sharjah, UAE</h3>
+                            <p>Heritage & Arts</p>
+                            <div class="destination-footer">
+                                <span class="destination-price">From ₦620K</span>
+                                <a href="https://wa.me/2349160012717" target="_blank" class="destination-btn">
+                                    <i class="fab fa-whatsapp"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- America Tab -->
+            <div class="tab-content" id="america">
+                <div class="destinations-grid">
+                    <div class="destination-card">
+                        <div class="destination-image">
+                            <img src="images/america-nyc.jpg" alt="New York, USA">
+                            <div class="destination-overlay"></div>
+                        </div>
+                        <div class="destination-content">
+                            <span class="destination-tag">America</span>
+                            <h3>New York, USA</h3>
+                            <p>The City That Never Sleeps</p>
+                            <div class="destination-footer">
+                                <span class="destination-price">From ₦1.2M</span>
+                                <a href="https://wa.me/2349160012717" target="_blank" class="destination-btn">
+                                    <i class="fab fa-whatsapp"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="destination-card">
+                        <div class="destination-image">
+                            <img src="images/america-la.jpg" alt="Los Angeles, USA">
+                            <div class="destination-overlay"></div>
+                        </div>
+                        <div class="destination-content">
+                            <span class="destination-tag">America</span>
+                            <h3>Los Angeles, USA</h3>
+                            <p>Entertainment Capital</p>
+                            <div class="destination-footer">
+                                <span class="destination-price">From ₦1.1M</span>
+                                <a href="https://wa.me/2349160012717" target="_blank" class="destination-btn">
+                                    <i class="fab fa-whatsapp"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="destination-card">
+                        <div class="destination-image">
+                            <img src="images/america-nyc.jpg" alt="Miami, USA">
+                            <div class="destination-overlay"></div>
+                        </div>
+                        <div class="destination-content">
+                            <span class="destination-tag">America</span>
+                            <h3>Miami, USA</h3>
+                            <p>Sun, Sand & Style</p>
+                            <div class="destination-footer">
+                                <span class="destination-price">From ₦980K</span>
+                                <a href="https://wa.me/2349160012717" target="_blank" class="destination-btn">
+                                    <i class="fab fa-whatsapp"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- ============================================
+         TESTIMONIALS SECTION
+         ============================================ -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up" data-aos-duration="1000">
+                <span class="section-label">Testimonials</span>
+                <h2 class="section-title">What Our Clients Say</h2>
+                <p class="section-description">
+                    Hear from travelers who have experienced our exceptional service.
+                </p>
+            </div>
+            
+            <div class="testimonials-wrapper" data-aos="fade-up" data-aos-delay="200">
+                <div class="testimonials-slider">
+                    <div class="testimonial-slide active">
+                        <div class="testimonial-card">
+                            <div class="testimonial-quote">
+                                <i class="fas fa-quote-left"></i>
+                            </div>
+                            <div class="testimonial-avatar">
+                                <img src="images/testimonial-1.jpg" alt="Client">
+                            </div>
+                            <div class="testimonial-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="testimonial-text">
+                                "Royal Atlas Travels made our honeymoon to Paris absolutely magical. 
+                                Every detail was perfectly arranged, from the flight to the romantic 
+                                hotel overlooking the Eiffel Tower. Highly recommended!"
+                            </p>
+                            <div class="testimonial-author">
+                                <h4>Amara Okafor</h4>
+                                <p>Honeymoon in Paris</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-slide">
+                        <div class="testimonial-card">
+                            <div class="testimonial-quote">
+                                <i class="fas fa-quote-left"></i>
+                            </div>
+                            <div class="testimonial-avatar">
+                                <img src="images/testimonial-2.jpg" alt="Client">
+                            </div>
+                            <div class="testimonial-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="testimonial-text">
+                                "The visa assistance for our USA trip was seamless. Royal Atlas 
+                                handled all the paperwork and we got our visas without any stress. 
+                                Their professionalism is unmatched."
+                            </p>
+                            <div class="testimonial-author">
+                                <h4>Chinedu Adeyemi</h4>
+                                <p>Business Trip to New York</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-slide">
+                        <div class="testimonial-card">
+                            <div class="testimonial-quote">
+                                <i class="fas fa-quote-left"></i>
+                            </div>
+                            <div class="testimonial-avatar">
+                                <img src="images/testimonial-3.jpg" alt="Client">
+                            </div>
+                            <div class="testimonial-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="testimonial-text">
+                                "Our family vacation to Dubai was incredible! Royal Atlas arranged 
+                                everything - desert safari, Burj Khalifa tickets, and a beautiful 
+                                hotel. The kids had the time of their lives!"
+                            </p>
+                            <div class="testimonial-author">
+                                <h4>Fatima Ibrahim</h4>
+                                <p>Family Vacation in Dubai</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-nav">
+                    <button class="testimonial-arrow" id="prevTestimonial">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <div class="testimonial-dots">
+                        <div class="testimonial-dot active" data-slide="0"></div>
+                        <div class="testimonial-dot" data-slide="1"></div>
+                        <div class="testimonial-dot" data-slide="2"></div>
+                    </div>
+                    <button class="testimonial-arrow" id="nextTestimonial">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- ============================================
+         CONTACT SECTION
+         ============================================ -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up" data-aos-duration="1000">
+                <span class="section-label">Contact Us</span>
+                <h2 class="section-title">Get in Touch</h2>
+                <p class="section-description">
+                    Ready to start your journey? Contact us today for a free consultation.
+                </p>
+            </div>
+            
+            <div class="contact-grid">
+                <div class="contact-info" data-aos="fade-right" data-aos-duration="1000">
+                    <div class="contact-card">
+                        <h3>Let's Plan Your Next Adventure</h3>
+                        <p>
+                            Whether you're dreaming of a European getaway, an Arabian adventure, 
+                            or an American expedition, we're here to make it happen.
+                        </p>
+                        
+                        <div class="contact-items">
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-phone-alt"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <span class="contact-label">Phone & WhatsApp</span>
+                                    <a href="tel:+2349160012717">+234 916 001 2717</a>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <span class="contact-label">Email</span>
+                                    <a href="mailto:royalatlastravels@gmail.com">royalatlastravels@gmail.com</a>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <span class="contact-label">Location</span>
+                                    <p>Lagos, Nigeria</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="social-links">
+                            <a href="https://facebook.com/ROYALATLASTravels" target="_blank" aria-label="Facebook">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="https://instagram.com/royalatlas.8383" target="_blank" aria-label="Instagram">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="https://wa.me/2349160012717" target="_blank" aria-label="WhatsApp">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form-wrapper" data-aos="fade-left" data-aos-duration="1000">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName">First Name</label>
+                                <input type="text" id="firstName" name="firstName" placeholder="John" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName">Last Name</label>
+                                <input type="text" id="lastName" name="lastName" placeholder="Doe" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" placeholder="+234 800 000 0000" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="destination">Preferred Destination</label>
+                            <select id="destination" name="destination" required>
+                                <option value="">Select a destination</option>
+                                <option value="europe">Europe</option>
+                                <option value="uae">UAE</option>
+                                <option value="america">America</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Your Message</label>
+                            <textarea id="message" name="message" placeholder="Tell us about your dream trip..."></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-full">
+                            <i class="fas fa-paper-plane"></i>
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- ============================================
+         FOOTER
+         ============================================ -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="logo">
+                        <div class="logo-icon">
+                            <i class="fas fa-plane"></i>
+                        </div>
+                        <div class="logo-text">ROYAL <span>ATLAS</span></div>
+                    </a>
+                    <p>
+                        Your trusted partner for extraordinary travel experiences. 
+                        We bring the world to your doorstep with premium services 
+                        and unforgettable journeys.
+                    </p>
+                    <div class="footer-social">
+                        <a href="https://facebook.com/ROYALATLASTravels" target="_blank">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://instagram.com/royalatlas.8383" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://wa.me/2349160012717" target="_blank">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#destinations">Destinations</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="#services">Flight Bookings</a></li>
+                        <li><a href="#services">Hotel Reservations</a></li>
+                        <li><a href="#services">Visa Assistance</a></li>
+                        <li><a href="#services">Holiday Packages</a></li>
+                        <li><a href="#services">Corporate Travel</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Contact Info</h4>
+                    <ul class="footer-contact">
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <span>+234 916 001 2717</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <span>royalatlastravels@gmail.com</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Lagos, Nigeria</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Royal Atlas Travels. All rights reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- ============================================
+         WHATSAPP FLOATING BUTTON
+         ============================================ -->
+    <a href="https://wa.me/2349160012717" target="_blank" class="whatsapp-btn" aria-label="Chat on WhatsApp">
+        <div class="whatsapp-pulse"></div>
+        <i class="fab fa-whatsapp"></i>
+        <span class="whatsapp-tooltip">Chat with us</span>
+    </a>
+    
+    <!-- AOS Animation Library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
