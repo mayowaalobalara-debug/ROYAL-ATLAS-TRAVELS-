@@ -11,7 +11,9 @@
     <meta property="og:title" content="Royal Atlas Travels | Premium Travel Experiences">
     <meta property="og:description" content="Your gateway to luxury travel in Europe, UAE, and America">
     <meta property="og:type" content="website">
+    <meta property="og:url" content="https://royalatlastravels.netlify.app/">
     <meta property="og:image" content="images/hero-bg.jpg">
+    <link rel="canonical" href="https://royalatlastravels.netlify.app/">
     
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -26,6 +28,18 @@
     
     <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
+
+    <!-- Clean URL: strip agent/deploy ID query parameters -->
+    <script>
+    (function() {
+        var url = new URL(window.location.href);
+        var cleaned = false;
+        ['agentId', 'agent_id', 'deployId', 'deploy_id'].forEach(function(p) {
+            if (url.searchParams.has(p)) { url.searchParams.delete(p); cleaned = true; }
+        });
+        if (cleaned) { window.history.replaceState({}, '', url.pathname + url.search + url.hash); }
+    })();
+    </script>
 </head>
 <body>
     <!-- ============================================
